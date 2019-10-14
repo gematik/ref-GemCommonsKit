@@ -1,26 +1,33 @@
 == GemCommonsKit
 Most common features that are commonly used and/or reusable can be found in this repo.
 
-=== Init
+=== Getting Started
+
+GemCommonsKit requires Swift 5.1.
+
+==== Setup for integration:
+
+- **Carthage:** Put this in your `Cartfile`:
+
+    github "gematik/GemCommonsKit" ~> 1.0
+
+==== Setup for development
+
+You will need https://bundler.io/[Bundler], https://github.com/yonaskolb/XcodeGen[XcodeGen]
+and https://fastlane.tools[fastlane] to conveniently use the established development environment.
+
 . Update ruby gems necessary for build commands
 [source,Shell]
 $ bundle install --path vendor/gems
 
-. Checkout dependencies of this project
+. Checkout (and build) dependencies and generate the xcodeproject
 [source,Shell]
-$ carthage checkout
-+
-If project was newly created (no or empty `Cartfile.resolved`):
-[source,Shell]
-$ carthage update --no-build
+$ bundle exec fastlane setup
 
-. Build Carthage dependencies
+. Build the project
 [source,Shell]
-$ carthage build --no-use-binaries --platform macOS,iOS
+$ bundle exec fastlane build_all [build_mac, build_ios]
 
-. Generate current ProjectLib
-[source,Shell]
-$ xcodegen
 
 === Use
 
@@ -28,16 +35,3 @@ Logging with `DLog()`:
 
 [source,Swift]
 DLog("Any message")
-
-=== Install
-
-==== Carthage
-[source]
-git "https://build.top.local/source/git/refImpl/mobszen/iOS/GemCommonsKit.git" "hoa/UIDECRP4IO-3"
-
-=== ToDo
-- Add examples to **Use** paragraph
-
-=== License
-
-Gematik 2018
