@@ -9,20 +9,31 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "GemCommonsKit",
-            targets: ["GemCommonsKit"]),
+            targets: ["GemCommonsKit"]
+        ),
+        .library(
+            name: "ObjCCommonsKit",
+            targets: ["ObjCCommonsKit"]
+        )
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://build.top.local/source/git/refImpl/mobszen/iOS/oss-mirror/Nimble.git", .branch("Development_1.x")),
+
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "GemCommonsKit",
-            dependencies: []),
+            dependencies: ["ObjCCommonsKit"]),
+        .target(
+            name: "ObjCCommonsKit",
+            dependencies: []
+        ),
         .testTarget(
             name: "GemCommonsKitTests",
-            dependencies: ["GemCommonsKit"]),
+            dependencies: ["GemCommonsKit", "Nimble"]),
     ]
 )

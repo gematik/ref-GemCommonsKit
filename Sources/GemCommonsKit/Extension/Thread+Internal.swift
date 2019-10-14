@@ -14,22 +14,31 @@
 //  limitations under the License.
 //
 
-import XCTest
+import Foundation
 
-#if !os(macOS) && !os(iOS)
-/// Run all tests in GemCommonsKit
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(ThreadExtInternalTest.allTests),
-        testCase(MutexTest.allTests),
-        testCase(SynchronizedVarTest.allTests),
-        testCase(BlockingVarTest.allTests),
-        testCase(ResultTest.allTests),
-        testCase(StringExtDigitsTest.allTests),
-        testCase(ResourceLoaderTests.allTests),
-        testCase(DataExtIOTest.allTests),
-        testCase(WeakRefTest.allTests),
-        testCase(WeakArrayTest.allTests)
-    ]
+extension Thread {
+    /**
+        Tells whether the Thread has not been started.
+        E.g. nor running, nor cancelled nor finished
+
+        - Returns: true when not yet started.
+    */
+    public var didNotStart: Bool {
+        return !self.isExecuting && !self.isCancelled && !self.isFinished
+    }
 }
-#endif
+
+extension Thread {
+    /// Internal extension
+    var threadName: String {
+        let tName: String
+        if let name = Thread.current.name, !name.isEmpty {
+            tName = name
+        } else if Thread.isMainThread {
+            tName = "main"
+        } else {
+            tName = "no-name"
+        }
+        return tName
+    }
+}

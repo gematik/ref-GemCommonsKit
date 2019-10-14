@@ -14,22 +14,16 @@
 //  limitations under the License.
 //
 
-import XCTest
+import Foundation
 
-#if !os(macOS) && !os(iOS)
-/// Run all tests in GemCommonsKit
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(ThreadExtInternalTest.allTests),
-        testCase(MutexTest.allTests),
-        testCase(SynchronizedVarTest.allTests),
-        testCase(BlockingVarTest.allTests),
-        testCase(ResultTest.allTests),
-        testCase(StringExtDigitsTest.allTests),
-        testCase(ResourceLoaderTests.allTests),
-        testCase(DataExtIOTest.allTests),
-        testCase(WeakRefTest.allTests),
-        testCase(WeakArrayTest.allTests)
-    ]
+/// Swift object that holds a weak reference to an Object like its Java counter-part WeakReference.
+public class WeakRef<T: AnyObject> {
+    /// The weak referenced object
+    public private(set) weak var value: T?
+
+    /// Initialize a weak reference.
+    /// - Parameter obj: the object to weak reference
+    public required init(_ obj: T) {
+        self.value = obj
+    }
 }
-#endif

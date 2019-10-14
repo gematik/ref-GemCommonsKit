@@ -14,22 +14,18 @@
 //  limitations under the License.
 //
 
+import Foundation
+@testable import GemCommonsKit
+import Nimble
 import XCTest
 
-#if !os(macOS) && !os(iOS)
-/// Run all tests in GemCommonsKit
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(ThreadExtInternalTest.allTests),
-        testCase(MutexTest.allTests),
-        testCase(SynchronizedVarTest.allTests),
-        testCase(BlockingVarTest.allTests),
-        testCase(ResultTest.allTests),
-        testCase(StringExtDigitsTest.allTests),
-        testCase(ResourceLoaderTests.allTests),
-        testCase(DataExtIOTest.allTests),
-        testCase(WeakRefTest.allTests),
-        testCase(WeakArrayTest.allTests)
+final class ResourceLoaderTest: XCTestCase {
+    func testResourceLoadingFromTestBundle() {
+        let path = Bundle(for: ResourceLoaderTest.self).testResourceFilePath(in: "Test", for: "empty").asURL
+        expect(FileManager.default.fileExists(atPath: path.absoluteURL.path)).to(beTrue())
+    }
+
+    static var allTests = [
+        ("testResourceLoadingFromTestBundle", testResourceLoadingFromTestBundle)
     ]
 }
-#endif

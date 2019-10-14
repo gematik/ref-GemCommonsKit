@@ -1,0 +1,10 @@
+output: docs
+author: gematik Gesellschaft für Telematikanwendungen der Gesundheitskarte mbH
+author_url: http://www.gematik.de
+exclude: /*/internal*
+module: GemCommonsKit
+github_url: https://build.top.local/source/git/refImpl/mobszen/iOS/ref-GemCommonsKit.git
+theme: jony
+xcodebuild_arguments:
+- "-project"
+- 'GemCommonsKit.xcodeproj'

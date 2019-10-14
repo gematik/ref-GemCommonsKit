@@ -1,0 +1,43 @@
+== GemCommonsKit
+Most common features that are commonly used and/or reusable can be found in this repo.
+
+=== Init
+. Update ruby gems necessary for build commands
+[source,Shell]
+$ bundle install --path vendor/gems
+
+. Checkout dependencies of this project
+[source,Shell]
+$ carthage checkout
++
+If project was newly created (no or empty `Cartfile.resolved`):
+[source,Shell]
+$ carthage update --no-build
+
+. Build Carthage dependencies
+[source,Shell]
+$ carthage build --no-use-binaries --platform macOS,iOS
+
+. Generate current ProjectLib
+[source,Shell]
+$ xcodegen
+
+=== Use
+
+Logging with `DLog()`:
+
+[source,Swift]
+DLog("Any message")
+
+=== Install
+
+==== Carthage
+[source]
+git "https://build.top.local/source/git/refImpl/mobszen/iOS/GemCommonsKit.git" "hoa/UIDECRP4IO-3"
+
+=== ToDo
+- Add examples to **Use** paragraph
+
+=== License
+
+Gematik 2018

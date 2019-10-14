@@ -14,22 +14,13 @@
 //  limitations under the License.
 //
 
-import XCTest
+import Foundation
 
-#if !os(macOS) && !os(iOS)
-/// Run all tests in GemCommonsKit
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(ThreadExtInternalTest.allTests),
-        testCase(MutexTest.allTests),
-        testCase(SynchronizedVarTest.allTests),
-        testCase(BlockingVarTest.allTests),
-        testCase(ResultTest.allTests),
-        testCase(StringExtDigitsTest.allTests),
-        testCase(ResourceLoaderTests.allTests),
-        testCase(DataExtIOTest.allTests),
-        testCase(WeakRefTest.allTests),
-        testCase(WeakArrayTest.allTests)
-    ]
+/**
+    Data extension Data+Empty
+*/
+extension Data {
+    /// Representation for empty/no-data state.
+    /// - Note: Used when we don't want an optional.
+    public static let empty = Data()
 }
-#endif

@@ -14,22 +14,29 @@
 //  limitations under the License.
 //
 
-import XCTest
+#import <Foundation/Foundation.h>
 
-#if !os(macOS) && !os(iOS)
-/// Run all tests in GemCommonsKit
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(ThreadExtInternalTest.allTests),
-        testCase(MutexTest.allTests),
-        testCase(SynchronizedVarTest.allTests),
-        testCase(BlockingVarTest.allTests),
-        testCase(ResultTest.allTests),
-        testCase(StringExtDigitsTest.allTests),
-        testCase(ResourceLoaderTests.allTests),
-        testCase(DataExtIOTest.allTests),
-        testCase(WeakRefTest.allTests),
-        testCase(WeakArrayTest.allTests)
-    ]
+/**
+ Catch NSExceptions from ObjC dependencies.
+
+ To use this function create a Bridging-Header and import this header file.
+ Then you'll just have to call:
+
+ ```swift
+ if let error = gemTryBlock({
+    // Execute code that can raise NSException(s)
+ }) {
+    // Handle the exception/error
+    print("An exception was thrown!", error.localizedDescription)
+ }
+ ```
+ */
+NS_INLINE NSException * _Nullable gemTryBlock(void(^_Nonnull tryBlock)(void)) {
+    @try {
+        tryBlock();
+    }
+    @catch (NSException *exception) {
+        return exception;
+    }
+    return nil;
 }
-#endif

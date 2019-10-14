@@ -14,22 +14,20 @@
 //  limitations under the License.
 //
 
+@testable import GemCommonsKit
+import Nimble
 import XCTest
 
-#if !os(macOS) && !os(iOS)
-/// Run all tests in GemCommonsKit
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(ThreadExtInternalTest.allTests),
-        testCase(MutexTest.allTests),
-        testCase(SynchronizedVarTest.allTests),
-        testCase(BlockingVarTest.allTests),
-        testCase(ResultTest.allTests),
-        testCase(StringExtDigitsTest.allTests),
-        testCase(ResourceLoaderTests.allTests),
-        testCase(DataExtIOTest.allTests),
-        testCase(WeakRefTest.allTests),
-        testCase(WeakArrayTest.allTests)
+final class WeakRefTest: XCTestCase {
+    func testWeakReference() {
+        var testText = "My test value" as NSString
+        let testRef = WeakRef(testText)
+        expect(testText).to(equal(testRef.value))
+        testText = "My other value"
+        expect(testRef.value).to(beNil())
+    }
+
+    static var allTests = [
+        ("testWeakReference", testWeakReference)
     ]
 }
-#endif

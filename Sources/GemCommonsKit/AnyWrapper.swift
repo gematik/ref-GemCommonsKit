@@ -14,22 +14,30 @@
 //  limitations under the License.
 //
 
-import XCTest
+import Foundation
 
-#if !os(macOS) && !os(iOS)
-/// Run all tests in GemCommonsKit
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(ThreadExtInternalTest.allTests),
-        testCase(MutexTest.allTests),
-        testCase(SynchronizedVarTest.allTests),
-        testCase(BlockingVarTest.allTests),
-        testCase(ResultTest.allTests),
-        testCase(StringExtDigitsTest.allTests),
-        testCase(ResourceLoaderTests.allTests),
-        testCase(DataExtIOTest.allTests),
-        testCase(WeakRefTest.allTests),
-        testCase(WeakArrayTest.allTests)
-    ]
+/**
+    Helper class to support Swift ObjC interoperability when passing `Any` around from Swift to ObjC
+ */
+public class AnyWrapper<T> {
+    /// The stored value
+    public let value: T
+
+    /// Canonical constructor
+    public required init(_ value: T) {
+        self.value = value
+    }
 }
-#endif
+
+/**
+    Helper class to support Swift ObjC interoperability when passing `Any` var around from Swift to ObjC and vice versa
+*/
+public class AnyMutableWrapper<T> {
+    /// The stored value
+    public var value: T
+
+    /// Canonical constructor
+    public required init(_ value: T) {
+        self.value = value
+    }
+}

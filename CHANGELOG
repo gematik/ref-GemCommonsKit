@@ -1,0 +1,27 @@
+# Changelog
+
+0.1.3-rc1
+---------
+
+* [Tools] SwiftLint
+* [Add] WeakRef
+* [Add] WeakArray
+* [Info] Changelog
+* [Tools] Jazzy documentation
+
+0.1.2
+-----
+
+* [Add] Data+IO for file writing
+* [Bug] ResourceLoader URL parsing
+
+0.1.1
+-----
+
+* [Bug] ResourceLoader Bundle path for XCTest target and other targets
+* [Tools] Fastlane
+
+0.1.0
+-----
+
+* Initial project import

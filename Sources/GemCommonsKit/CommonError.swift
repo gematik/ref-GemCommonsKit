@@ -14,22 +14,16 @@
 //  limitations under the License.
 //
 
-import XCTest
+import Foundation
 
-#if !os(macOS) && !os(iOS)
-/// Run all tests in GemCommonsKit
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(ThreadExtInternalTest.allTests),
-        testCase(MutexTest.allTests),
-        testCase(SynchronizedVarTest.allTests),
-        testCase(BlockingVarTest.allTests),
-        testCase(ResultTest.allTests),
-        testCase(StringExtDigitsTest.allTests),
-        testCase(ResourceLoaderTests.allTests),
-        testCase(DataExtIOTest.allTests),
-        testCase(WeakRefTest.allTests),
-        testCase(WeakArrayTest.allTests)
-    ]
+/// Common error(s)
+public enum CommonError: Error {
+    /// Indicate a function was not (yet) implemented
+    case notImplementedError
 }
-#endif
+
+/// Indicate a method is not supposed to be called but overridden by its subtypes
+public func abstractError(file: StaticString = #file, line: UInt = #line) -> Swift.Never {
+    //swiftlint:disable:previous unavailable_function
+    fatalError("Non-overwritten abstract method", file: file, line: line)
+}

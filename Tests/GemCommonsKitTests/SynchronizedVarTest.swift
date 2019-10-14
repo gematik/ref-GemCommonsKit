@@ -14,22 +14,26 @@
 //  limitations under the License.
 //
 
+@testable import GemCommonsKit
+import Nimble
 import XCTest
 
-#if !os(macOS) && !os(iOS)
-/// Run all tests in GemCommonsKit
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(ThreadExtInternalTest.allTests),
-        testCase(MutexTest.allTests),
-        testCase(SynchronizedVarTest.allTests),
-        testCase(BlockingVarTest.allTests),
-        testCase(ResultTest.allTests),
-        testCase(StringExtDigitsTest.allTests),
-        testCase(ResourceLoaderTests.allTests),
-        testCase(DataExtIOTest.allTests),
-        testCase(WeakRefTest.allTests),
-        testCase(WeakArrayTest.allTests)
+final class SynchronizedVarTest: XCTestCase {
+
+    func testSynchronizedVar() {
+        let syncedVar = SynchronizedVar<String>("initial")
+        var oldVar: String?
+        let thread = Thread {
+            oldVar = syncedVar.value
+            syncedVar.value = "closure"
+        }
+        syncedVar.value = "test"
+        thread.start()
+        expect(syncedVar.value).toEventually(equal("closure"))
+        expect(oldVar).to(equal("test"))
+    }
+
+    static let allTests = [
+        ("testSynchronizedVar", testSynchronizedVar)
     ]
 }
-#endif

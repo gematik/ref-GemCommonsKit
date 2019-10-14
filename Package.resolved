@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://build.top.local/source/git/refImpl/mobszen/iOS/oss-mirror/Nimble.git",
+        "state": {
+          "branch": "Development_1.x",
+          "revision": "0edb48d936f31f4ce657047884b77b6e3b0bef4b",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
