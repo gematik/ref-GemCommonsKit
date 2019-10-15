@@ -1,3 +1,6 @@
+# Release 1.0.2
+Troubleshooting the build process
+
 # Release 1.0.1
 Remove obsolete swift package manager files. Update of README
 
