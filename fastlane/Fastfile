@@ -15,6 +15,6 @@
 #
 
 import_from_git(
-  url: 'https://github.com/gematik/fastlane',
+  url: 'https://github.com/gematik/FastlaneLanes',
   branch: 'master'
 )
