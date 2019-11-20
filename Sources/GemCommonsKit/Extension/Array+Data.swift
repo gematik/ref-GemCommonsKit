@@ -19,6 +19,6 @@ import Foundation
 extension Array where Element == UInt8 {
     /// Data struct of this Array
     public var data: Data {
-        return Data(bytes: self)
+        Data(self)
     }
 }

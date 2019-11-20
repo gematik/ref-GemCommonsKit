@@ -1,3 +1,6 @@
+# Release 1.0.7
+Info.plist files added to repository
+
 # Release 1.0.3
 Update FastlaneLanes reference
 

@@ -19,7 +19,7 @@
       type: framework
       platform: [iOS, macOS]
       info:
-        path: DerivedData/GemCommonsKit/Info.plist
+        path: Resources/GemCommonsKit_Info.plist
       sources:
         - Sources/GemCommonsKit
       scheme:
@@ -32,7 +32,7 @@
       sources:
         - Sources/ObjCCommonsKit
       info:
-        path: DerivedData/ObjCCommonsKit/Info.plist
+        path: Resources/ObjCCommonsKit_Info.plist
       scheme:
         testTargets:
           - ObjCCommonsKitTests_${platform}

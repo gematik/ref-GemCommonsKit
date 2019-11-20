@@ -3,7 +3,7 @@
 /Packages
 
 # Generated documentation
-/docs
+docs/
 
 # AppCode project files
 .idea/
