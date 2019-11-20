@@ -1,3 +1,6 @@
+# Release 1.0.8
+README corrected for Carthage build
+
 # Release 1.0.7
 Info.plist files added to repository
 

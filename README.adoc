@@ -9,7 +9,7 @@ GemCommonsKit requires Swift 5.1.
 
 - **Carthage:** Put this in your `Cartfile`:
 
-    github "gematik/GemCommonsKit" ~> 1.0
+    github "gematik/ref-GemCommonsKit" ~> 1.0
 
 ==== Setup for development
 
