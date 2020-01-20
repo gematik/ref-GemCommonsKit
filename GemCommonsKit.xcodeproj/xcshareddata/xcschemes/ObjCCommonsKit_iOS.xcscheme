@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BB3A1AA5BC164FD452C0AD68BD9797FF"
+               BlueprintIdentifier = "BB3A1AA5BC164FD452C0AD68"
                BuildableName = "ObjCCommonsKit.framework"
                BlueprintName = "ObjCCommonsKit_iOS"
                ReferencedContainer = "container:GemCommonsKit.xcodeproj">
@@ -27,13 +27,14 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "43BF8BFAC245C581488E7AA219BF3125"
+               BlueprintIdentifier = "43BF8BFAC245C581488E7AA2"
                BuildableName = "ObjCCommonsKitTests.xctest"
                BlueprintName = "ObjCCommonsKitTests_iOS"
                ReferencedContainer = "container:GemCommonsKit.xcodeproj">
@@ -43,7 +44,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BB3A1AA5BC164FD452C0AD68BD9797FF"
+            BlueprintIdentifier = "BB3A1AA5BC164FD452C0AD68"
             BuildableName = "ObjCCommonsKit.framework"
             BlueprintName = "ObjCCommonsKit_iOS"
             ReferencedContainer = "container:GemCommonsKit.xcodeproj">
@@ -53,6 +54,8 @@
       </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
+      <CodeCoverageTargets>
+      </CodeCoverageTargets>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -67,7 +70,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BB3A1AA5BC164FD452C0AD68BD9797FF"
+            BlueprintIdentifier = "BB3A1AA5BC164FD452C0AD68"
             BuildableName = "ObjCCommonsKit.framework"
             BlueprintName = "ObjCCommonsKit_iOS"
             ReferencedContainer = "container:GemCommonsKit.xcodeproj">
@@ -88,7 +91,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BB3A1AA5BC164FD452C0AD68BD9797FF"
+            BlueprintIdentifier = "BB3A1AA5BC164FD452C0AD68"
             BuildableName = "ObjCCommonsKit.framework"
             BlueprintName = "ObjCCommonsKit_iOS"
             ReferencedContainer = "container:GemCommonsKit.xcodeproj">

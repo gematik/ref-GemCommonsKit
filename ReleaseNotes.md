@@ -1,3 +1,6 @@
+# Release 1.0.10
+- API documentation on gh-pages branch for GitHub.io page
+
 # Release 1.0.8
 README corrected for Carthage build
 
