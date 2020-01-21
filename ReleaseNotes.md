@@ -1,3 +1,6 @@
+# Release 1.0.11
+- update organization name in API documentation
+
 # Release 1.0.10
 - API documentation on gh-pages branch for GitHub.io page
 
