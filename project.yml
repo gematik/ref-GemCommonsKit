@@ -6,6 +6,7 @@
       iOS: 12.1
   settings:
     base:
+      CODE_SIGN_IDENTITY: ""
       SWIFT_VERSION: 5.0
       ALWAYS_SEARCH_USER_PATHS: NO
       FRAMEWORK_SEARCH_PATHS: "$(inherited)"

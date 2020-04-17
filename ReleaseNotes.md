@@ -1,3 +1,6 @@
+# Release 1.0.13
+- provide empty code sign identity when using xcodegen
+
 # Release 1.0.11
 - update organization name in API documentation
 
