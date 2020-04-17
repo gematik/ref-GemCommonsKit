@@ -1,3 +1,6 @@
+# Release 1.1.0
+- provide a new minor release, since `carthage update` has problems resolving the "correct" two-digit release tag
+
 # Release 1.0.13
 - provide empty code sign identity when using xcodegen
 
