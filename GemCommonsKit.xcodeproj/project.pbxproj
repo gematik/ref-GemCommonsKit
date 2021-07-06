@@ -1,0 +1,1035 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034B11D040FDD5727A175BC4 /* Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8DB9766ED66F320F747B36 /* Synchronized.swift */; };
+		0612CCAC5A4C7CC7E8090EF2 /* Array+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597C0564A075EA69BF9E610 /* Array+Data.swift */; };
+		0CA077A8770507197B5774FD /* ThreadExtInternalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF14D09253F654D51171227 /* ThreadExtInternalTest.swift */; };
+		0E94D610E5C539A7787129C0 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD052793A2A6D9D89456 /* XCTestManifests.swift */; };
+		10877F738CAE802B1BACBD12 /* AnyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB97A156315433502D928186 /* AnyWrapper.swift */; };
+		12CD1E29D24387C5C708073F /* StringExtDigitsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775B1567F5E6F0387F127CFD /* StringExtDigitsTest.swift */; };
+		182E92743EA031F15AAFB5D0 /* String+Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47A18597B89B44686F0D9D /* String+Digits.swift */; };
+		1989E602DFC7624CB3653238 /* WeakArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACA672856E990E5478D9C79 /* WeakArrayTest.swift */; };
+		1A03C4AFC9F26FBB4A79DC42 /* Data+IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B79D1609A8A4CCA8A246A4A /* Data+IO.swift */; };
+		200DF13366E9C90FF7359A2D /* SynchronizedVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4A34DA779705C70C4A5C8 /* SynchronizedVar.swift */; };
+		25A432F7606DF41A3D30DAC4 /* Test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 918D499EC04A967978463CD1 /* Test.bundle */; };
+		28FD8204EBEED1824AB9F6DA /* WeakRefTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAEC5F4F92CC6B1169E77B7 /* WeakRefTest.swift */; };
+		31AFC2A0009CF0FE0FDBD521 /* DLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF53E5289DFD2A982CB28F15 /* DLog.swift */; };
+		33F49DDFC28194FF8E4C5035 /* ThreadExtInternalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF14D09253F654D51171227 /* ThreadExtInternalTest.swift */; };
+		34B6351F56C254D49181ADFF /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE505F0BD89B5797F75141 /* Nimble.xcframework */; };
+		3D4969E4990E31D8846A0CFD /* Data+empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1657EF6F16691F9C9E3913E /* Data+empty.swift */; };
+		3E025F0734C54901C316D7D8 /* AnyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB97A156315433502D928186 /* AnyWrapper.swift */; };
+		43D51DAC181BF665C1C28501 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE65FC3E0ED59B1059B8DD /* CommonError.swift */; };
+		49060CBA6F9A8E07BDB76C72 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD052793A2A6D9D89456 /* XCTestManifests.swift */; };
+		4F10B8D670B8289DF8C27733 /* Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8DB9766ED66F320F747B36 /* Synchronized.swift */; };
+		4FB40726BB39CD8D18D4AA09 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE505F0BD89B5797F75141 /* Nimble.xcframework */; };
+		67D71BB93DA2C16B94B5C828 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EE3C36D674D235A8BC32C /* ResourceLoader.swift */; };
+		6996EB84D64EEEC9C5E3C589 /* DataExtIOTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384D7FBCB4D23F84876D868A /* DataExtIOTest.swift */; };
+		6B07589AB037ECEE80647C75 /* ResourceLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA60B601156661772D15E /* ResourceLoaderTest.swift */; };
+		6CA9BFBE15A4F926C45752DA /* String+Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47A18597B89B44686F0D9D /* String+Digits.swift */; };
+		73C3E1DC1C828C92CC6380D8 /* WeakArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACA672856E990E5478D9C79 /* WeakArrayTest.swift */; };
+		74D663484F57CE573FFC8B57 /* SynchronizedVarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB60FBAD6815CE79BD57A4 /* SynchronizedVarTest.swift */; };
+		753AD33A2B8B51A455DA6694 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EE3C36D674D235A8BC32C /* ResourceLoader.swift */; };
+		75F89B07B1D9CCFCBD039313 /* GemCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 256F11EAB98DCF5725151907 /* GemCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		762DA0075122756F14B0F69B /* Array+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597C0564A075EA69BF9E610 /* Array+Data.swift */; };
+		7A6B52DAF912005B5CDAA4E4 /* Thread+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B15D7109FF93891FFF124 /* Thread+Internal.swift */; };
+		8B9A0377919AB815A715FE55 /* GemCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85BFCA839947A3AC1BC439BF /* GemCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D33419ECC59213954AA8E49 /* DLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF53E5289DFD2A982CB28F15 /* DLog.swift */; };
+		90E9C7291FE086D1DD9F26C9 /* BlockingVarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF59CA6558411EA72288EC /* BlockingVarTest.swift */; };
+		93B0E1D00012FA8033FD0E75 /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC641003693B1F59164EE43 /* WeakRef.swift */; };
+		999D5F8CC587C12D8B235089 /* Data+IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B79D1609A8A4CCA8A246A4A /* Data+IO.swift */; };
+		9A275701C258196919D21DBA /* Test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 918D499EC04A967978463CD1 /* Test.bundle */; };
+		9FB5B4ECBA35760344EBB7E3 /* ExceptionCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1B98F0D036B2321E4579EB /* ExceptionCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4631194D8702F711E997A5C /* ResourceLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA60B601156661772D15E /* ResourceLoaderTest.swift */; };
+		A7C867E27574F74902FF7CBA /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE65FC3E0ED59B1059B8DD /* CommonError.swift */; };
+		AC0A382D409CBF89F47F6225 /* DataExtIOTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384D7FBCB4D23F84876D868A /* DataExtIOTest.swift */; };
+		AD8079FB00ED15503A40196B /* ExceptionCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1B98F0D036B2321E4579EB /* ExceptionCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E92CE78EE994EB0CA8A4E0 /* SynchronizedVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4A34DA779705C70C4A5C8 /* SynchronizedVar.swift */; };
+		BB42AA77BABB8ABF0C92D69A /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE505F0BD89B5797F75141 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFA5FF6C8B3762325D9299C2 /* ExceptionCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D11917ACF6698437D691BB /* ExceptionCatcher.m */; };
+		C6376B112436A088CE4E7AD0 /* Thread+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B15D7109FF93891FFF124 /* Thread+Internal.swift */; };
+		CBF85B190E83CC601413C21B /* SynchronizedVarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB60FBAD6815CE79BD57A4 /* SynchronizedVarTest.swift */; };
+		D8F3C30D9C3ED988F71F2EDC /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F03A1C6B995B0A2CFA3E3E /* WeakArray.swift */; };
+		DF0E5E809B0368C7B5576811 /* BlockingVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD84D055DF640467BF300FD3 /* BlockingVar.swift */; };
+		E13155F68DBD4D22AC27626D /* Data+empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1657EF6F16691F9C9E3913E /* Data+empty.swift */; };
+		E478136F00DF0AA47FB3E304 /* ExceptionCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D11917ACF6698437D691BB /* ExceptionCatcher.m */; };
+		E596B8081E338A36D4EF73CA /* GemCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256F11EAB98DCF5725151907 /* GemCommonsKit.framework */; };
+		E6EF6C991BE13066F0DCE1C6 /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC641003693B1F59164EE43 /* WeakRef.swift */; };
+		EFDBAE76AB22E49492D2186B /* StringExtDigitsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775B1567F5E6F0387F127CFD /* StringExtDigitsTest.swift */; };
+		F0CAF61790F60FA2B7B854C3 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE505F0BD89B5797F75141 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6B60D518044B2A43F4E4719 /* BlockingVarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF59CA6558411EA72288EC /* BlockingVarTest.swift */; };
+		FA0D5DCD5197A05487AFAE44 /* BlockingVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD84D055DF640467BF300FD3 /* BlockingVar.swift */; };
+		FBA2E32AE4379234EFDF5D35 /* GemCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BFCA839947A3AC1BC439BF /* GemCommonsKit.framework */; };
+		FD5AEEDB373FA046EF027E46 /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F03A1C6B995B0A2CFA3E3E /* WeakArray.swift */; };
+		FE0C3E90CFECD6368B378157 /* WeakRefTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAEC5F4F92CC6B1169E77B7 /* WeakRefTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3002E0B68CE4F69E5F3DC8A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DDA7D4965C3DC33C92D323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A944A7ABCDE3C5807F5AB61;
+			remoteInfo = GemCommonsKit_iOS;
+		};
+		3D6CF8F184EE76B49B7AFAD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DDA7D4965C3DC33C92D323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B94859EA4D0CA3EE9160583A;
+			remoteInfo = GemCommonsKit_macOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A779570FE0DC968B6A0255A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB42AA77BABB8ABF0C92D69A /* Nimble.xcframework in Embed Frameworks */,
+				75F89B07B1D9CCFCBD039313 /* GemCommonsKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C24BF590A480377337CC23 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F0CAF61790F60FA2B7B854C3 /* Nimble.xcframework in Embed Frameworks */,
+				8B9A0377919AB815A715FE55 /* GemCommonsKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C8DB9766ED66F320F747B36 /* Synchronized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronized.swift; sourceTree = "<group>"; };
+		256F11EAB98DCF5725151907 /* GemCommonsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GemCommonsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		266B15D7109FF93891FFF124 /* Thread+Internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thread+Internal.swift"; sourceTree = "<group>"; };
+		2C1B98F0D036B2321E4579EB /* ExceptionCatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionCatcher.h; sourceTree = "<group>"; };
+		32E99E5354023477328075CB /* GemCommonsKitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GemCommonsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34AE505F0BD89B5797F75141 /* Nimble.xcframework */ = {isa = PBXFileReference; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
+		384D7FBCB4D23F84876D868A /* DataExtIOTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtIOTest.swift; sourceTree = "<group>"; };
+		3B47A18597B89B44686F0D9D /* String+Digits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Digits.swift"; sourceTree = "<group>"; };
+		3DAEC5F4F92CC6B1169E77B7 /* WeakRefTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefTest.swift; sourceTree = "<group>"; };
+		4182FA1985F1B9B335A15C33 /* GemCommonsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GemCommonsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C4A34DA779705C70C4A5C8 /* SynchronizedVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedVar.swift; sourceTree = "<group>"; };
+		5597C0564A075EA69BF9E610 /* Array+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Data.swift"; sourceTree = "<group>"; };
+		56D11917ACF6698437D691BB /* ExceptionCatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExceptionCatcher.m; sourceTree = "<group>"; };
+		6B79D1609A8A4CCA8A246A4A /* Data+IO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+IO.swift"; sourceTree = "<group>"; };
+		6BC641003693B1F59164EE43 /* WeakRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
+		6D2EE3C36D674D235A8BC32C /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		775B1567F5E6F0387F127CFD /* StringExtDigitsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtDigitsTest.swift; sourceTree = "<group>"; };
+		85BFCA839947A3AC1BC439BF /* GemCommonsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GemCommonsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8968A1975BA3E61F46E6D15C /* ObjCCommonsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjCCommonsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCB60FBAD6815CE79BD57A4 /* SynchronizedVarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedVarTest.swift; sourceTree = "<group>"; };
+		918D499EC04A967978463CD1 /* Test.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Test.bundle; sourceTree = "<group>"; };
+		994D70A8DC1C28EFE0292919 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		9EFE65FC3E0ED59B1059B8DD /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		AC5AA60B601156661772D15E /* ResourceLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoaderTest.swift; sourceTree = "<group>"; };
+		AFF14D09253F654D51171227 /* ThreadExtInternalTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadExtInternalTest.swift; sourceTree = "<group>"; };
+		B1657EF6F16691F9C9E3913E /* Data+empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+empty.swift"; sourceTree = "<group>"; };
+		BACA672856E990E5478D9C79 /* WeakArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakArrayTest.swift; sourceTree = "<group>"; };
+		BBCF59CA6558411EA72288EC /* BlockingVarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingVarTest.swift; sourceTree = "<group>"; };
+		BEF30EDC160BC2F67526DB33 /* ObjCCommonsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjCCommonsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF57CD052793A2A6D9D89456 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		DB97A156315433502D928186 /* AnyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyWrapper.swift; sourceTree = "<group>"; };
+		DD84D055DF640467BF300FD3 /* BlockingVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingVar.swift; sourceTree = "<group>"; };
+		DF53E5289DFD2A982CB28F15 /* DLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLog.swift; sourceTree = "<group>"; };
+		E4F03A1C6B995B0A2CFA3E3E /* WeakArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3CD6D17A360A6ADA97DA145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB40726BB39CD8D18D4AA09 /* Nimble.xcframework in Frameworks */,
+				FBA2E32AE4379234EFDF5D35 /* GemCommonsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED28FA1607EE446347FDFDF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B6351F56C254D49181ADFF /* Nimble.xcframework in Frameworks */,
+				E596B8081E338A36D4EF73CA /* GemCommonsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00D1B0AF2FCABCF53DFD4C9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34AE505F0BD89B5797F75141 /* Nimble.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E2579EF528D19E879D231A7 /* GemCommonsKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBCF59CA6558411EA72288EC /* BlockingVarTest.swift */,
+				AC5AA60B601156661772D15E /* ResourceLoaderTest.swift */,
+				8DCB60FBAD6815CE79BD57A4 /* SynchronizedVarTest.swift */,
+				BACA672856E990E5478D9C79 /* WeakArrayTest.swift */,
+				3DAEC5F4F92CC6B1169E77B7 /* WeakRefTest.swift */,
+				BF57CD052793A2A6D9D89456 /* XCTestManifests.swift */,
+				7E21D72239E7DE09D694960B /* Extension */,
+			);
+			path = GemCommonsKitTests;
+			sourceTree = "<group>";
+		};
+		46D75076C733229D48AFEC25 = {
+			isa = PBXGroup;
+			children = (
+				D5DECB4ADEE3AAE870E21410 /* GemCommonsKit */,
+				BD730AB596803B54D9BE8DE4 /* ObjCCommonsKit */,
+				911EB8108B132A4134A0C127 /* Tests */,
+				00D1B0AF2FCABCF53DFD4C9B /* Frameworks */,
+				6B77F0CA85FAA074067761EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B77F0CA85FAA074067761EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				256F11EAB98DCF5725151907 /* GemCommonsKit.framework */,
+				85BFCA839947A3AC1BC439BF /* GemCommonsKit.framework */,
+				32E99E5354023477328075CB /* GemCommonsKitTests.xctest */,
+				4182FA1985F1B9B335A15C33 /* GemCommonsKitTests.xctest */,
+				BEF30EDC160BC2F67526DB33 /* ObjCCommonsKit.framework */,
+				8968A1975BA3E61F46E6D15C /* ObjCCommonsKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E21D72239E7DE09D694960B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				384D7FBCB4D23F84876D868A /* DataExtIOTest.swift */,
+				775B1567F5E6F0387F127CFD /* StringExtDigitsTest.swift */,
+				AFF14D09253F654D51171227 /* ThreadExtInternalTest.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		911EB8108B132A4134A0C127 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				918D499EC04A967978463CD1 /* Test.bundle */,
+				0E2579EF528D19E879D231A7 /* GemCommonsKitTests */,
+				D60CC4585E8241B57AA0BCA0 /* ObjCCommonsKitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B0E1D0410E5973D4CB5AA291 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B98F0D036B2321E4579EB /* ExceptionCatcher.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BD730AB596803B54D9BE8DE4 /* ObjCCommonsKit */ = {
+			isa = PBXGroup;
+			children = (
+				56D11917ACF6698437D691BB /* ExceptionCatcher.m */,
+				B0E1D0410E5973D4CB5AA291 /* include */,
+			);
+			name = ObjCCommonsKit;
+			path = Sources/ObjCCommonsKit;
+			sourceTree = "<group>";
+		};
+		D5DECB4ADEE3AAE870E21410 /* GemCommonsKit */ = {
+			isa = PBXGroup;
+			children = (
+				DB97A156315433502D928186 /* AnyWrapper.swift */,
+				DD84D055DF640467BF300FD3 /* BlockingVar.swift */,
+				9EFE65FC3E0ED59B1059B8DD /* CommonError.swift */,
+				DF53E5289DFD2A982CB28F15 /* DLog.swift */,
+				6D2EE3C36D674D235A8BC32C /* ResourceLoader.swift */,
+				0C8DB9766ED66F320F747B36 /* Synchronized.swift */,
+				44C4A34DA779705C70C4A5C8 /* SynchronizedVar.swift */,
+				E4F03A1C6B995B0A2CFA3E3E /* WeakArray.swift */,
+				6BC641003693B1F59164EE43 /* WeakRef.swift */,
+				F30A1C632DBC401F1AC731FA /* Extension */,
+			);
+			name = GemCommonsKit;
+			path = Sources/GemCommonsKit;
+			sourceTree = "<group>";
+		};
+		D60CC4585E8241B57AA0BCA0 /* ObjCCommonsKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				994D70A8DC1C28EFE0292919 /* .gitkeep */,
+			);
+			path = ObjCCommonsKitTests;
+			sourceTree = "<group>";
+		};
+		F30A1C632DBC401F1AC731FA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5597C0564A075EA69BF9E610 /* Array+Data.swift */,
+				B1657EF6F16691F9C9E3913E /* Data+empty.swift */,
+				6B79D1609A8A4CCA8A246A4A /* Data+IO.swift */,
+				3B47A18597B89B44686F0D9D /* String+Digits.swift */,
+				266B15D7109FF93891FFF124 /* Thread+Internal.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A8626478A4C3E7C69F56EDD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8079FB00ED15503A40196B /* ExceptionCatcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8815086536438FC6A5C8A40 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB5B4ECBA35760344EBB7E3 /* ExceptionCatcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01FF5811148AB3F6D43D4512 /* GemCommonsKitTests_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4094F9C8D0F10BBD97EF793 /* Build configuration list for PBXNativeTarget "GemCommonsKitTests_macOS" */;
+			buildPhases = (
+				D6FC9E0A9B29332D4277A6A7 /* Sources */,
+				C747A19D8D9E0D60B82BF910 /* Resources */,
+				A3CD6D17A360A6ADA97DA145 /* Frameworks */,
+				F6C24BF590A480377337CC23 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8CC154A2DA5655D255EF94C /* PBXTargetDependency */,
+			);
+			name = GemCommonsKitTests_macOS;
+			productName = GemCommonsKitTests_macOS;
+			productReference = 4182FA1985F1B9B335A15C33 /* GemCommonsKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A944A7ABCDE3C5807F5AB61 /* GemCommonsKit_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A37F60827BE2AD3BD5D104 /* Build configuration list for PBXNativeTarget "GemCommonsKit_iOS" */;
+			buildPhases = (
+				ED5CF3FB5A1BB421A99DBBAA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GemCommonsKit_iOS;
+			productName = GemCommonsKit_iOS;
+			productReference = 256F11EAB98DCF5725151907 /* GemCommonsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33F1BE4CF4AA9E3555FE8B50 /* ObjCCommonsKit_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D5A0CC648D1834C4A8A2B63 /* Build configuration list for PBXNativeTarget "ObjCCommonsKit_macOS" */;
+			buildPhases = (
+				A8626478A4C3E7C69F56EDD9 /* Headers */,
+				C9B8B3A7B0679A7381D3CD7A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjCCommonsKit_macOS;
+			productName = ObjCCommonsKit_macOS;
+			productReference = 8968A1975BA3E61F46E6D15C /* ObjCCommonsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		42B4557F391E22DEC1348E75 /* GemCommonsKitTests_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99E85D882B057BCBD7681988 /* Build configuration list for PBXNativeTarget "GemCommonsKitTests_iOS" */;
+			buildPhases = (
+				AE38FC9105B7A2E124435E03 /* Sources */,
+				353CEADC6EFE82EF4D6FC262 /* Resources */,
+				ED28FA1607EE446347FDFDF5 /* Frameworks */,
+				2A779570FE0DC968B6A0255A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0488D39E41BDF877D54D558 /* PBXTargetDependency */,
+			);
+			name = GemCommonsKitTests_iOS;
+			productName = GemCommonsKitTests_iOS;
+			productReference = 32E99E5354023477328075CB /* GemCommonsKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B94859EA4D0CA3EE9160583A /* GemCommonsKit_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BE57E8076A26DF66E7D827A /* Build configuration list for PBXNativeTarget "GemCommonsKit_macOS" */;
+			buildPhases = (
+				2B2CFA72E12D867CAFFAFF9D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GemCommonsKit_macOS;
+			productName = GemCommonsKit_macOS;
+			productReference = 85BFCA839947A3AC1BC439BF /* GemCommonsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB3A1AA5BC164FD452C0AD68 /* ObjCCommonsKit_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 163B817F5F31EDC6941FBEB9 /* Build configuration list for PBXNativeTarget "ObjCCommonsKit_iOS" */;
+			buildPhases = (
+				B8815086536438FC6A5C8A40 /* Headers */,
+				DE7AA4AA9B4688D941D1BFEF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjCCommonsKit_iOS;
+			productName = ObjCCommonsKit_iOS;
+			productReference = BEF30EDC160BC2F67526DB33 /* ObjCCommonsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75DDA7D4965C3DC33C92D323 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = B311B7767412CA480E74BF2A /* Build configuration list for PBXProject "GemCommonsKit" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 46D75076C733229D48AFEC25;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42B4557F391E22DEC1348E75 /* GemCommonsKitTests_iOS */,
+				01FF5811148AB3F6D43D4512 /* GemCommonsKitTests_macOS */,
+				2A944A7ABCDE3C5807F5AB61 /* GemCommonsKit_iOS */,
+				B94859EA4D0CA3EE9160583A /* GemCommonsKit_macOS */,
+				BB3A1AA5BC164FD452C0AD68 /* ObjCCommonsKit_iOS */,
+				33F1BE4CF4AA9E3555FE8B50 /* ObjCCommonsKit_macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		353CEADC6EFE82EF4D6FC262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A432F7606DF41A3D30DAC4 /* Test.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C747A19D8D9E0D60B82BF910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A275701C258196919D21DBA /* Test.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B2CFA72E12D867CAFFAFF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E025F0734C54901C316D7D8 /* AnyWrapper.swift in Sources */,
+				0612CCAC5A4C7CC7E8090EF2 /* Array+Data.swift in Sources */,
+				DF0E5E809B0368C7B5576811 /* BlockingVar.swift in Sources */,
+				A7C867E27574F74902FF7CBA /* CommonError.swift in Sources */,
+				31AFC2A0009CF0FE0FDBD521 /* DLog.swift in Sources */,
+				999D5F8CC587C12D8B235089 /* Data+IO.swift in Sources */,
+				3D4969E4990E31D8846A0CFD /* Data+empty.swift in Sources */,
+				753AD33A2B8B51A455DA6694 /* ResourceLoader.swift in Sources */,
+				182E92743EA031F15AAFB5D0 /* String+Digits.swift in Sources */,
+				034B11D040FDD5727A175BC4 /* Synchronized.swift in Sources */,
+				B7E92CE78EE994EB0CA8A4E0 /* SynchronizedVar.swift in Sources */,
+				7A6B52DAF912005B5CDAA4E4 /* Thread+Internal.swift in Sources */,
+				D8F3C30D9C3ED988F71F2EDC /* WeakArray.swift in Sources */,
+				93B0E1D00012FA8033FD0E75 /* WeakRef.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE38FC9105B7A2E124435E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B60D518044B2A43F4E4719 /* BlockingVarTest.swift in Sources */,
+				AC0A382D409CBF89F47F6225 /* DataExtIOTest.swift in Sources */,
+				6B07589AB037ECEE80647C75 /* ResourceLoaderTest.swift in Sources */,
+				12CD1E29D24387C5C708073F /* StringExtDigitsTest.swift in Sources */,
+				CBF85B190E83CC601413C21B /* SynchronizedVarTest.swift in Sources */,
+				0CA077A8770507197B5774FD /* ThreadExtInternalTest.swift in Sources */,
+				73C3E1DC1C828C92CC6380D8 /* WeakArrayTest.swift in Sources */,
+				FE0C3E90CFECD6368B378157 /* WeakRefTest.swift in Sources */,
+				49060CBA6F9A8E07BDB76C72 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9B8B3A7B0679A7381D3CD7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E478136F00DF0AA47FB3E304 /* ExceptionCatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FC9E0A9B29332D4277A6A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E9C7291FE086D1DD9F26C9 /* BlockingVarTest.swift in Sources */,
+				6996EB84D64EEEC9C5E3C589 /* DataExtIOTest.swift in Sources */,
+				A4631194D8702F711E997A5C /* ResourceLoaderTest.swift in Sources */,
+				EFDBAE76AB22E49492D2186B /* StringExtDigitsTest.swift in Sources */,
+				74D663484F57CE573FFC8B57 /* SynchronizedVarTest.swift in Sources */,
+				33F49DDFC28194FF8E4C5035 /* ThreadExtInternalTest.swift in Sources */,
+				1989E602DFC7624CB3653238 /* WeakArrayTest.swift in Sources */,
+				28FD8204EBEED1824AB9F6DA /* WeakRefTest.swift in Sources */,
+				0E94D610E5C539A7787129C0 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7AA4AA9B4688D941D1BFEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA5FF6C8B3762325D9299C2 /* ExceptionCatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5CF3FB5A1BB421A99DBBAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10877F738CAE802B1BACBD12 /* AnyWrapper.swift in Sources */,
+				762DA0075122756F14B0F69B /* Array+Data.swift in Sources */,
+				FA0D5DCD5197A05487AFAE44 /* BlockingVar.swift in Sources */,
+				43D51DAC181BF665C1C28501 /* CommonError.swift in Sources */,
+				8D33419ECC59213954AA8E49 /* DLog.swift in Sources */,
+				1A03C4AFC9F26FBB4A79DC42 /* Data+IO.swift in Sources */,
+				E13155F68DBD4D22AC27626D /* Data+empty.swift in Sources */,
+				67D71BB93DA2C16B94B5C828 /* ResourceLoader.swift in Sources */,
+				6CA9BFBE15A4F926C45752DA /* String+Digits.swift in Sources */,
+				4F10B8D670B8289DF8C27733 /* Synchronized.swift in Sources */,
+				200DF13366E9C90FF7359A2D /* SynchronizedVar.swift in Sources */,
+				C6376B112436A088CE4E7AD0 /* Thread+Internal.swift in Sources */,
+				FD5AEEDB373FA046EF027E46 /* WeakArray.swift in Sources */,
+				E6EF6C991BE13066F0DCE1C6 /* WeakRef.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0488D39E41BDF877D54D558 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A944A7ABCDE3C5807F5AB61 /* GemCommonsKit_iOS */;
+			targetProxy = 3002E0B68CE4F69E5F3DC8A9 /* PBXContainerItemProxy */;
+		};
+		D8CC154A2DA5655D255EF94C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B94859EA4D0CA3EE9160583A /* GemCommonsKit_macOS */;
+			targetProxy = 3D6CF8F184EE76B49B7AFAD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07B5DD99C59C97109056DB6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Carthage/Build\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.GemCommonsKitTests-macOS";
+				PRODUCT_NAME = GemCommonsKitTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		158053892652A9E235E32D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/GemCommonsKit_Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.GemCommonsKit-iOS";
+				PRODUCT_NAME = GemCommonsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		2897C95CFB2B9BC941734642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/ObjCCommonsKit_Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.ObjCCommonsKit-macOS";
+				PRODUCT_NAME = ObjCCommonsKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		3F6692E12824AC0013E08561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/ObjCCommonsKit_Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.ObjCCommonsKit-iOS";
+				PRODUCT_NAME = ObjCCommonsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		5CD6537A79A46F999033794A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Carthage/Build\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.GemCommonsKitTests-iOS";
+				PRODUCT_NAME = GemCommonsKitTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62AD39CB1649BB90802FD22A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/ObjCCommonsKit_Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.ObjCCommonsKit-iOS";
+				PRODUCT_NAME = ObjCCommonsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		6D847F41C5E5FD3C5EC2EA49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/GemCommonsKit_Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.GemCommonsKit-macOS";
+				PRODUCT_NAME = GemCommonsKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		6FFBE57D345CB42B3E114C7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/ObjCCommonsKit_Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.ObjCCommonsKit-macOS";
+				PRODUCT_NAME = ObjCCommonsKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		84237434F77FB15E221D9EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Carthage/Build\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.GemCommonsKitTests-iOS";
+				PRODUCT_NAME = GemCommonsKitTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9412ACE7F42C48E9A2587B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEF66EE1FB4CE68091E19126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/GemCommonsKit_Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.GemCommonsKit-iOS";
+				PRODUCT_NAME = GemCommonsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		D58C6DB4F55DAB746A328FB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/GemCommonsKit_Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.GemCommonsKit-macOS";
+				PRODUCT_NAME = GemCommonsKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		F2CEC4DC7103406E0A4D676B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Carthage/Build\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.common.GemCommonsKitTests-macOS";
+				PRODUCT_NAME = GemCommonsKitTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F46C9945FE7E8ACB6AF1D3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = incremental;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07A37F60827BE2AD3BD5D104 /* Build configuration list for PBXNativeTarget "GemCommonsKit_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158053892652A9E235E32D63 /* Debug */,
+				AEF66EE1FB4CE68091E19126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		163B817F5F31EDC6941FBEB9 /* Build configuration list for PBXNativeTarget "ObjCCommonsKit_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62AD39CB1649BB90802FD22A /* Debug */,
+				3F6692E12824AC0013E08561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		3BE57E8076A26DF66E7D827A /* Build configuration list for PBXNativeTarget "GemCommonsKit_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D847F41C5E5FD3C5EC2EA49 /* Debug */,
+				D58C6DB4F55DAB746A328FB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		8D5A0CC648D1834C4A8A2B63 /* Build configuration list for PBXNativeTarget "ObjCCommonsKit_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2897C95CFB2B9BC941734642 /* Debug */,
+				6FFBE57D345CB42B3E114C7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		99E85D882B057BCBD7681988 /* Build configuration list for PBXNativeTarget "GemCommonsKitTests_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84237434F77FB15E221D9EBF /* Debug */,
+				5CD6537A79A46F999033794A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		B311B7767412CA480E74BF2A /* Build configuration list for PBXProject "GemCommonsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F46C9945FE7E8ACB6AF1D3A5 /* Debug */,
+				9412ACE7F42C48E9A2587B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D4094F9C8D0F10BBD97EF793 /* Build configuration list for PBXNativeTarget "GemCommonsKitTests_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B5DD99C59C97109056DB6D /* Debug */,
+				F2CEC4DC7103406E0A4D676B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75DDA7D4965C3DC33C92D323 /* Project object */;
+}

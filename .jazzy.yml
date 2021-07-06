@@ -1,0 +1,10 @@
+output: docs
+author: gematik GmbH
+author_url: http://www.gematik.de
+exclude: /*/internal*
+module: GemCommonsKit
+github_url: https://github.com/gematik/ref-GemCommonsKit
+theme: jony
+xcodebuild_arguments:
+- "-project"
+- 'GemCommonsKit.xcodeproj'

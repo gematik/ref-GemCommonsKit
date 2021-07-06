@@ -1,0 +1,48 @@
+  name: GemCommonsKit
+  options:
+    bundleIdPrefix: de.gematik.ti.common
+    deploymentTarget:
+      macOS: 10.12
+      iOS: 12.1
+  settings:
+    base:
+      CODE_SIGN_IDENTITY: ""
+      SWIFT_VERSION: 5.0
+      ALWAYS_SEARCH_USER_PATHS: NO
+      FRAMEWORK_SEARCH_PATHS: "$(inherited)"
+      BUILD_LIBRARY_FOR_DISTRIBUTION: YES
+    configs:
+      Release:
+        SWIFT_COMPILATION_MODE: wholemodule
+      Debug:
+        SWIFT_COMPILATION_MODE: incremental
+  targets:
+    GemCommonsKit:
+      type: framework
+      platform: [iOS, macOS]
+      info:
+        path: Resources/GemCommonsKit_Info.plist
+      sources:
+        - Sources/GemCommonsKit
+      scheme:
+        testTargets:
+          - GemCommonsKitTests_${platform}
+        gatherCoverageData: true
+    ObjCCommonsKit:
+      type: framework
+      platform: [iOS, macOS]
+      sources:
+        - Sources/ObjCCommonsKit
+      info:
+        path: Resources/ObjCCommonsKit_Info.plist
+      scheme:
+        gatherCoverageData: true
+    GemCommonsKitTests:
+      type: bundle.unit-test
+      platform: [iOS, macOS]
+      sources:
+        - path: Tests
+      dependencies:
+        - framework: Carthage/Build/Nimble.xcframework
+        - target: GemCommonsKit_${platform}
+  buildImplicitDependencies: true
