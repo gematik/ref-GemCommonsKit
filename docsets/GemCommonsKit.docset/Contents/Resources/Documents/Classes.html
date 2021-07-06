@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Classes" class="dashAnchor"></a>
+    <a title="Classes  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p>
+          <a href="index.html">GemCommonsKit Docs</a>
+          <span class="no-mobile"> (100% documented)</span>
+        </p>
+    
+        <p class="header-right">
+          <a href="https://github.com/gematik/ref-GemCommonsKit">
+            <img src="img/gh.png"/>
+            <span class="no-mobile">View on GitHub</span>
+          </a>
+        </p>
+    
+      </div>
+    </header>
+    <div id="breadcrumbs-container">
+      <div class="content-wrapper">
+        <p id="breadcrumbs">
+          <span class="no-mobile">
+            <a href="index.html">GemCommonsKit Reference</a>
+            <img id="carat" src="img/carat.png" />
+          </span>
+          Classes  Reference
+        </p>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="article-wrapper">
+        <article class="main-content">
+          <section>
+            <section class="section">
+              <h1>Classes</h1>
+              <p>The following classes are available globally.</p>
+
+            </section>
+            <section class="section task-group-section">
+              <div class="task-group">
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:13GemCommonsKit10AnyWrapperC"></a>
+                      <a name="//apple_ref/swift/Class/AnyWrapper" class="dashAnchor"></a>
+                      <a class="token" href="#/s:13GemCommonsKit10AnyWrapperC">AnyWrapper</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Helper class to support Swift ObjC interoperability when passing <code>Any</code> around from Swift to ObjC</p>
+
+                          <a href="Classes/AnyWrapper.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AnyWrapper</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:13GemCommonsKit17AnyMutableWrapperC"></a>
+                      <a name="//apple_ref/swift/Class/AnyMutableWrapper" class="dashAnchor"></a>
+                      <a class="token" href="#/s:13GemCommonsKit17AnyMutableWrapperC">AnyMutableWrapper</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Helper class to support Swift ObjC interoperability when passing <code>Any</code> var around from Swift to ObjC and vice versa</p>
+
+                          <a href="Classes/AnyMutableWrapper.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AnyMutableWrapper</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:13GemCommonsKit11BlockingVarC"></a>
+                      <a name="//apple_ref/swift/Class/BlockingVar" class="dashAnchor"></a>
+                      <a class="token" href="#/s:13GemCommonsKit11BlockingVarC">BlockingVar</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>BlockingVar blocks the [value.get] call until the [value.set] has set the value.</p>
+
+<p>Note: be aware of blocking the main-thread when the getter is
+invoked from the main-thread.</p>
+
+                          <a href="Classes/BlockingVar.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BlockingVar</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:13GemCommonsKit15SynchronizedVarC"></a>
+                      <a name="//apple_ref/swift/Class/SynchronizedVar" class="dashAnchor"></a>
+                      <a class="token" href="#/s:13GemCommonsKit15SynchronizedVarC">SynchronizedVar</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Thread-Safe variable wrapper.</p>
+
+<p>Makes sure the get and set are happening synchronously by using
+a Mutex for reader/writing to the wrapped value</p>
+
+                          <a href="Classes/SynchronizedVar.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SynchronizedVar</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:13GemCommonsKit9WeakArrayC"></a>
+                      <a name="//apple_ref/swift/Class/WeakArray" class="dashAnchor"></a>
+                      <a class="token" href="#/s:13GemCommonsKit9WeakArrayC">WeakArray</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>A Collection similar to an array, but wraps its Elements in a <code><a href="Classes/WeakRef.html">WeakRef</a></code>.</p>
+
+                          <a href="Classes/WeakArray.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">WeakArray</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:13GemCommonsKit7WeakRefC"></a>
+                      <a name="//apple_ref/swift/Class/WeakRef" class="dashAnchor"></a>
+                      <a class="token" href="#/s:13GemCommonsKit7WeakRefC">WeakRef</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Swift object that holds a weak reference to an Object like its Java counter-part WeakReference.</p>
+
+                          <a href="Classes/WeakRef.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">WeakRef</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+        </article>
+      </div>
+      <div class="nav-wrapper">
+        <nav class="nav-bottom">
+          <ul class="nav-groups">
+            <li class="nav-group-name">
+              <a href="Classes.html">Classes</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Classes/AnyMutableWrapper.html">AnyMutableWrapper</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Classes/AnyWrapper.html">AnyWrapper</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Classes/BlockingVar.html">BlockingVar</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Classes/SynchronizedVar.html">SynchronizedVar</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Classes/WeakArray.html">WeakArray</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Classes/WeakRef.html">WeakRef</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="Enums.html">Enumerations</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Enums/CommonError.html">CommonError</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="Extensions.html">Extensions</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Extensions/Array.html">Array</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Extensions/Bundle.html">Bundle</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Extensions/Data.html">Data</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Extensions/FileManager.html">FileManager</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Extensions/String.html">String</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Extensions/String/FileReaderError.html">– FileReaderError</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Extensions/Thread.html">Thread</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Extensions/URL.html">URL</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="Functions.html">Functions</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Functions.html#/s:13GemCommonsKit4ALog_8filename8function4lineySS_S2SSitF">ALog(_:filename:function:line:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Functions.html#/s:13GemCommonsKit4DLog_8filename8function4lineySSyXK_S2SSitF">DLog(_:filename:function:line:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Functions.html#/s:13GemCommonsKit13abstractError4file4lines5NeverOs12StaticStringV_SutF">abstractError(file:line:)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="Structs.html">Structures</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Structs/Synchronized.html">Synchronized</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-wrapper">
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="http://www.gematik.de" target="_blank" rel="external">gematik GmbH</a>. All rights reserved. (Last updated: 2021-07-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </div>
+    </div>
+  </body>
+</div>
+</html>
