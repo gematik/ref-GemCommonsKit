@@ -2,7 +2,7 @@
   options:
     bundleIdPrefix: de.gematik.ti.common
     deploymentTarget:
-      macOS: 10.12
+      macOS: 11.0
       iOS: 12.1
   settings:
     base:
@@ -16,6 +16,10 @@
         SWIFT_COMPILATION_MODE: wholemodule
       Debug:
         SWIFT_COMPILATION_MODE: incremental
+  packages:
+    Nimble:
+      url: https://github.com/Quick/Nimble
+      majorVersion: 10.0.0
   targets:
     GemCommonsKit:
       type: framework
@@ -39,10 +43,13 @@
         gatherCoverageData: true
     GemCommonsKitTests:
       type: bundle.unit-test
+      settings:
+        base:
+          BUILD_LIBRARY_FOR_DISTRIBUTION: NO
       platform: [iOS, macOS]
       sources:
         - path: Tests
       dependencies:
-        - framework: Carthage/Build/Nimble.xcframework
+        - package: Nimble
         - target: GemCommonsKit_${platform}
   buildImplicitDependencies: true

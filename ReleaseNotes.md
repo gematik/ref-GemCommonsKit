@@ -1,3 +1,9 @@
+# Release 1.3.0
+
+- Support for Xcode 13.3.1
+- Update ruby dependencies
+- Removal of Carthage in favor of SwiftPM
+
 # Release 1.2.0
 - updated build tooling for development
 

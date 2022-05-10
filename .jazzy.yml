@@ -5,6 +5,11 @@ exclude: /*/internal*
 module: GemCommonsKit
 github_url: https://github.com/gematik/ref-GemCommonsKit
 theme: jony
+swift_build_tool: xcodebuild
 xcodebuild_arguments:
 - "-project"
 - 'GemCommonsKit.xcodeproj'
+- "-scheme"
+- 'GemCommonsKit_iOS'
+- '-destination'
+- 'platform=iOS Simulator,name=iPhone 11'
